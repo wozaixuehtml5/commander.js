@@ -3,10 +3,10 @@
  */
 
 var EventEmitter = require('events').EventEmitter;
-var spawn = require('child_process').spawn;
-var path = require('path');
-var dirname = path.dirname;
-var basename = path.basename;
+var spawn = require('child_process').spawn; 
+var path = require('path'); 
+var dirname = path.dirname; 
+var basename = path.basename; 
 var fs = require('fs'); 
 
 /**

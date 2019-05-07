@@ -10,11 +10,11 @@ proc.stdout.on('data', function (data) {
   output += data.toString();
 });
 
-// Set a timeout to give 'proc' time to setup completely
+// Set a timeout to give  'proc' time to setup completely
 setTimeout(function () {
   proc.kill('SIGINT');
 
-  // Set another timeout to give 'prog' time to handle the signal
+  // Set another t imeout to give 'prog' time to handle the signal
   setTimeout(function() {
     output.should.equal('SIGINT\n');
   }, 1000);
